@@ -26,3 +26,10 @@ Features:
 6. Alternate characters
     | : eg: p|t either matches p or t
     () : eg: (p|t)yre matches either pyre or tyre
+
+
+Implementation 
+Two different ways to create a regular expression
+ 
+1. let reg = /[abc]/ig;
+2. let reg2 = new RegExp(/[abc]/, 'ig');
