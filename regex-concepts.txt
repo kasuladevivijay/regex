@@ -1,0 +1,28 @@
+Using www.regex101.com for testing/learning
+
+Features: 
+1. Character Set []
+    eg. [abc]  - matches every word where its starting letters are either a or b or c
+2. Ranges [a-zA-Z0-9]
+3. Repeating Characters
+    eg: 1. Unlimited matches [a-z]+, [0-9]+....
+        2. Limited characters matches [a-z]{10} matches 10 characters, [0-9]{5}
+        3. Limited characters matche range [a-z]{5,8} ; [0-9]{10-12}
+        4. match atleast these many characters [a-z]{5,} ; matches atleast 5 characters or more
+4. Metacharacters
+    most commonly used are:
+    1. \d : match any digit 0-9
+    2. \w : match any word Character a-z, A-Z, 0-9 and underscore(_)
+    3. \s : match any space or tab
+    4. \t : match only tab
+5. Special Characters
+    + : one-o-more quantifier
+    \ : escape character
+    [] : character Set
+    [^] : negation character Set
+    * : zero-or-more quantifier
+    . : any character whatsoever (except new line)
+    ? : zero-or-one quantifier
+6. Alternate characters
+    | : eg: p|t either matches p or t
+    () : eg: (p|t)yre matches either pyre or tyre
