@@ -4,7 +4,8 @@ const patterns = {
     telephone: /^\d{11}$/,
     username: /^[a-z\d]{5,12}$/i,
     password: /^[w@-]{8,20}$/,
-    slug: /^[a-z\d-]{8,20}$/
+    slug: /^[a-z\d-]{8,20}$/,
+    email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/
 };
 
 // grab all the inputs
