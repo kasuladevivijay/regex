@@ -27,6 +27,18 @@ Features:
     | : eg: p|t either matches p or t
     () : eg: (p|t)yre matches either pyre or tyre
 
+7. The only problem is when you need to include a / character in the literal form then you have to use an escape character. For example, to search for / in </div> say you would have to enter:
+    var ex1=/<\/div>/;
+
+8. remember to double up on the backslash in quoted strings. var ex1= new RegExp("ISBN\\d");
+
+9. remember to use /\ if you want to search for a \ in RegExp literal.
+
+10. There is also the convention that capital letters match the inverse set of characters:
+    \D	any non-digit
+    \S	any non white-space
+    \W	any non-word character 
+
 
 Implementation 
 Two different ways to create a regular expression
